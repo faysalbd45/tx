@@ -17,7 +17,7 @@ async def on_ready():
     print('Logged in as '+client.user.name+' (ID:'+client.user.id+') | Connected to '+str(len(client.servers))+' servers | Connected to '+str(len(set(client.get_all_members())))+' users')
     print('--------')
     print('--------')
-    print('CREATED AND HOSTED BY SUBHANKAR DAS')
+    print('CREATED AND HOSTED BY BumBumOP')
 
 @client.command(pass_context = True)
 @commands.has_permissions(kick_members=True)     
@@ -38,10 +38,10 @@ async def send(ctx, *, content: str):
         for member in ctx.message.server.members:
             try:
                 await client.send_message(member, content)
-                await client.say("DM Sent To : {} :white_check_mark:  ".format(member))
+                await client.say("Sent To : {} :thumbsup:  ".format(member))
             except:
                 print("can't")
-                await client.say("DM can't Sent To : {} :x: ".format(member))
+                await client.say("can't Sent To : {} :x: ".format(member))
 
 
-client.run("YOUR BOT'S TOKEN HERE")                
+client.run("NzE4NDgxOTQ5OTk5NDk3MjE4.XvTtdA._oZ0eIAz4fJgaOKvTdyMbp6Jxyw")                
